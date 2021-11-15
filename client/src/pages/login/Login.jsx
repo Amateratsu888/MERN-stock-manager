@@ -53,7 +53,7 @@ export default function SignIn() {
       <input type="text" id="login" className="fadeIn second" name="login" placeholder="login"  onChange={e=>logHandler(e)} value={log.login}
       required
       /> 
-      <input type="text" id="password" className="fadeIn third" name="login" placeholder="password" onChange={e=>logHandler(e)} value={log.password}
+      <input type="password" id="password" className="fadeIn third" name="login" placeholder="password" onChange={e=>logHandler(e)} value={log.password}
        minLength="8"
        maxLength="16"
        alphabet="A-Za-z0-9+_%@!$*~-"

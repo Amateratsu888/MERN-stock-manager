@@ -11,14 +11,14 @@ const commandsRoutes = require("./routes/commands.routes")
 const logInOutRoutes = require("./routes/logInOut.routes")
 const checkLogin =require ("./middleware/checkLogin")
 
-const corsOptions = "http://localhost:3000";
+//const corsOptions = "http://localhost:3000";
 
 // Middleware
 //for our server to be able to read the “body” of an incoming JSON object
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors(corsOptions))
+app.use(cors())
 
 //app.get('*', checkLogin)
 //app.post('*', checkLogin)
